@@ -26,3 +26,4 @@ ggplot()+
             mapping = aes(x=date,y=USD,color=name),
             size=1)->geom
 geom
+plotly::ggplotly(geom)
