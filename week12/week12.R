@@ -91,3 +91,4 @@ saveRDS(ubikeMap, "ubikeMap.rds")
     "https://www.google.com/maps/dir/24.9441075,121.0692864/24.9456645,121.3694314/@24.9456371,121.3691364,20z/data=!4m5!4m4!1m1!4e1!1m0!3e2"
 }
 
+

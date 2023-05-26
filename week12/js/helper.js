@@ -31,13 +31,28 @@ function prepareBaseMap(currentLocation) {
     leaflet.map.setView(currentLocation, 13);
   }
   
+// Add marker
+  // leaflet.currentLocationMarker =
+  //   L.marker(currentLocation).addTo(leaflet.map);
 
+
+  for (let n=0 ; n<2408;n++){
+    circlemarker=[youbike[n].lat,youbike[n].lng]
+    leaflet.circlemarkers=
+    L.circle(circlemarker,{radius: 5}).addTo(leaflet.map);
+}
+  // leaflet.circlemarkers=
+  // L.circle(circlemarkers,{radius: 5}).addTo(leaflet.map);
+// leaflet.circlemarkers=
+//   L.circle(circlemarkers1,{radius: 5}).addTo(leaflet.map);
   
-  // Add marker
-  leaflet.currentLocationMarker =
-    L.marker(currentLocation).addTo(leaflet.map);
+ 
 };
 
+
+ 
+
+  
 function successCallback(position) {
   console.log(position);
   currentLocation = [position.coords.latitude, position.coords.longitude];
